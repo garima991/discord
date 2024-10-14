@@ -191,7 +191,6 @@ section{
 .cards {
     display: flex;
     align-items: center;
-    /* background-image: linear-gradient(135deg, rgba(221, 216, 216, 0.2), #455FDE); */
     border-radius: 60px;
     padding: 16px;
     border: 3px solid #7282E2;
@@ -208,11 +207,12 @@ section{
     align-items: center;
     border-radius: 80px;
     border: none;
+    width: 60%;
 }
 
 .card-media video {
     border-radius: 50px;
-    width: 90%;
+    width: 100%;
 }
 
 .cards .details{
@@ -228,7 +228,6 @@ section{
     font-family: "Kanit";
     font-size: 50px;
     font-weight: 900;
-    color: white;
     line-height: 50px;
 }
 
@@ -236,7 +235,6 @@ section{
     font-family: "Mukta";
     font-size: 22px;
     font-weight: 400;
-    color: white;
     line-height: 30px;
 }
 
@@ -281,7 +279,6 @@ section{
     justify-content: center;
     align-items: center;
     background-color: #5865f2;
-    color: white;
     gap: 10px;
     padding: 13px 25px;
     border-radius: 17px;
@@ -290,7 +287,7 @@ section{
     border: none;
     font-weight: 400;
     margin-top: 30px;
-
+    color: white;
 }
 
 .dont-scroll button:hover {
@@ -484,19 +481,17 @@ footer {
     }
     
     .cards{
-        /* width: 698px;
-        height: 390px; */
         gap: 20px;
+        padding: 20px;
     }
 
      .card-media{
-        width: 368px;
+        /* width: 368px; */
         height: 280px;
     }
 
      .card-media video{
         border-radius: 36px;
-        background-size: cover;
     }
 
    
@@ -535,7 +530,6 @@ footer {
     .logo{
        width: 100vw;
     }
-
 } 
 
 @media (max-width: 576px) {
@@ -578,7 +572,6 @@ footer {
 
     .card-media{
         width: 550px;
-        /* height: 400px; */
     }
 
     .card-media video{
@@ -622,7 +615,6 @@ footer {
     }
 
 }
-
 
 
 @media (max-width: 380px) {
