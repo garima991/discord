@@ -208,17 +208,15 @@ header ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 525px;
+    /* height: 525px; */
     border-radius: 80px;
     border: none;
 }
 
-.chats .card-media video {
-    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/663b271d6f05c8c9e11f8d65_Discord Refresh Sound-MP4-transcode (1).mp4");
-    background-repeat: no-repeat;
+.card-media video {
     border-radius: 50px;
-    height: 530px;
-    background-size: cover;
+    /* height: 530px; */
+    width: 90%;
 }
 
 .cards .details{
@@ -257,31 +255,6 @@ header ul li a {
     width: 100vw;
 }
 
-.stream .card-media{
-    /* width: 777px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 510px;
-    border-radius: 50px;
-    border: none;
-    background: transparent;
-}
-
-.stream .card-media video {
-    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/6257adef93867e50d84d30e2_665434315cbc60da2d4c9684_Discord_Website_Refresh_Same Room_EN_V2-transcode.mp4");
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    height: 530px;
-    background-size: cover;
-}
-
-/* .vCall-container{
-    display: flex;
-    justify-content:center;
-    flex-direction:column;
-    align-items: center;
-} */
 
 .vCall{
     display: flex;
@@ -290,23 +263,6 @@ header ul li a {
     width: 100vw;
 }
 
-.vCall .card-media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 510px;
-    border-radius: 50px;
-    border: none;
-    background: transparent;
-}
-
-.vCall .card-media video {
-    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/6638c6b04eff56a99c1e2d7d_Discord_Website_Refresh_Hop-In-transcode.webm");
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    height: 530px;
-    background-size: cover;
-}
 
 /* .logos{
     display: flex;
@@ -341,7 +297,6 @@ header ul li a {
     overflow: hidden;
     padding: 20px 0;
     white-space: nowrap;
-    /* position: relative; */
     width: 100vw;
 }
 
@@ -364,23 +319,6 @@ header ul li a {
     width: 100vw;
 }
 
-.chill .card-media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 510px;
-    border-radius: 50px;
-    background: transparent;
-    border: none;
-}
-
-.chill .card-media video {
-    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/663b271d6f05c8c9e11f8d65_Discord Refresh Sound-MP4-transcode (1).mp4");
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    height: 530px;
-    background-size: cover;
-}
 
 .fun-session{
     display: flex;
@@ -389,48 +327,12 @@ header ul li a {
     width: 100vw;
 }
 
-.fun-session .card-media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 510px;
-    border-radius: 50px;
-    background: transparent;
-    border: none;
-}
-
-.fun-session .card-media video {
-    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/66446078b3e738a7c1f85e35_Discord_Website_Refresh_Activities_03-transcode.mp4");
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    height: 530px;
-    background-size: cover;
-}
 
 .xBox{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-}
-
-.xBox .card-media{
-    /* width: 777px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    height: 510px;
-    border-radius: 50px;
-    border: none;
-}
-
-.xBox .card-media video {
-    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/6638c8e7cb756886cd8d61af_Discord_Website_Refresh_Platforms-transcode.webm");
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    height: 530px;
-    background-size: cover;
 }
 
 .dont-scroll {
@@ -467,11 +369,6 @@ header ul li a {
 .dont-scroll button:hover {
     background-color: #7c84daaa;
 }
-
-/* .footer-img{
-    position: relative; */
-
-/* } */
 
 .footer-img img{
     width: 100vw;
@@ -653,15 +550,6 @@ footer {
         line-height: 30px;
     }
 
-    /* .chats .details, .chill .details, .stream .details, .fun-session .details, .vCall .details, .xBox .details h2{
-        font-size: 35px;
-    }
-
-    .chats .details, .chill .details, .stream .details, .fun-session .details, .vCall .details, .xBox .details p{
-        font-size: 28px;
-        line-height: 34px;
-    } */
-
     .hero-btns{
         flex-direction: column;
         width: 309px;
@@ -669,22 +557,19 @@ footer {
         margin-bottom: 70px;
     }
     
-    .chats .cards, .chill .cards, .stream .cards, .vCall .cards, .fun-session .cards, .xBox .cards{
+    .cards{
         width: 698px;
         height: 390px;
         gap: 20px;
     }
 
-    .chats .card-media, .chill .card-media, .stream .card-media, .fun-session .card-media, .vCall .card-media, .xBox .card-media{
+     .card-media{
         width: 368px;
         height: 280px;
-        border-radius: 60%;
     }
 
-    .chats .card-media video, .chill .card-media video, .stream .card-media video, .fun-session .card-media video , .vCall .card-media video, .xBox .card-media video{
-        background-repeat: no-repeat;
-        border-radius: 50px;
-        height: 280px;
+     .card-media video{
+        border-radius: 36px;
         background-size: cover;
     }
 
