@@ -420,13 +420,11 @@ header ul li a {
 }
 
 .footer-img{
-    position: relative;
-
+    max-height: min-content;
 }
-
 .footer-img img{
-    width: 100%;
-    height: 100%;
+    width: 100dvw;
+    transform: translateY(10px);
 }
 
 footer {
@@ -616,7 +614,7 @@ footer {
     }
 
     .chats .card-media img{
-        aspect-ratio: 331∶281;
+        /* aspect-ratio: 331∶281; */
     }
 
     .cards .details h2{
@@ -657,3 +655,7 @@ footer {
 @media (max-width: 380px) {
 
 }
+
+svg path {
+    fill: #ff0000 !important;
+  }
