@@ -31,8 +31,9 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 0px;
     background-color: transparent;
+    width: 100vw;
 }
 
 header img {
@@ -78,6 +79,7 @@ header ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100vw;
 }
 
 .content{
@@ -85,8 +87,8 @@ header ul li a {
     width: 100%;
     color: white;
     align-items: center; 
-    justify-content: space-around;
-    padding: 30px;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
 .hero .details{
@@ -96,7 +98,7 @@ header ul li a {
     align-self: flex-start;
     align-items: flex-start;
     margin-top: 80px;
-    width: 400px ;
+    width: 450px ;
     height: 300px ;
     gap: 30px;
 }
@@ -109,11 +111,12 @@ header ul li a {
      width: 400px ;
      height: 300px ;
      gap: 30px;
+     padding: 25px;
 }
 
 .hero h1{
     font-family: "Kanit";
-    font-size: 58px;
+    font-size: 54px;
     font-weight: 1000;
     line-height: 50px;
     letter-spacing: 2px;
@@ -127,11 +130,11 @@ header ul li a {
  }
 
 .hero img{
-    max-width: 800px;
-    scale: 1.05;
+    max-width: 50vw;
 }
 
 .hero .image{
+    padding: 20px;
     align-self: flex-end;
 }
 
@@ -140,7 +143,7 @@ header ul li a {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin: 40px;
+    margin: 20px;
 }
 
 .hero-btn{
@@ -186,6 +189,7 @@ header ul li a {
     justify-content: center;
     align-items: center;
     padding: 70px;
+    width: 100vw;
 }
 
 .cards {
@@ -197,8 +201,8 @@ header ul li a {
     padding: 17px;
     border: 3px solid #7282E2;
     box-shadow: 0 2px 52px #452a7c1a;
-    width: 1200px;
-    height: 560px;
+    max-width: 1300px;
+    height: 610px;
     gap: 30px;
     -webkit-backdrop-filter: blur(24px) contrast(0.88) brightness(1.75);
     backdrop-filter: blur(24px) contrast(0.88) brightness(1.75);
@@ -209,16 +213,16 @@ header ul li a {
     justify-content: center;
     align-items: center;
     height: 525px;
-    border-radius: 40px;
+    border-radius: 80px;
     border: none;
-    background-color: #161cbb;
 }
 
-.card-media img {
-    width: 110%;
-    height: 115%;
-    border-radius: 45px;
-    z-index: 1;
+.chats .card-media video {
+    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/663b271d6f05c8c9e11f8d65_Discord Refresh Sound-MP4-transcode (1).mp4");
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    height: 530px;
+    background-size: cover;
 }
 
 .cards .details{
@@ -254,7 +258,7 @@ header ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px ;
+    width: 100vw;
 }
 
 .stream .card-media{
@@ -268,10 +272,12 @@ header ul li a {
     background: transparent;
 }
 
-.stream .card-media video{
-    height: 102%;
-    width: 100%;
+.stream .card-media video {
+    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/6257adef93867e50d84d30e2_665434315cbc60da2d4c9684_Discord_Website_Refresh_Same Room_EN_V2-transcode.mp4");
+    background-repeat: no-repeat;
     border-radius: 50px;
+    height: 530px;
+    background-size: cover;
 }
 
 /* .vCall-container{
@@ -285,7 +291,7 @@ header ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    width: 100vw;
 }
 
 .vCall .card-media{
@@ -298,10 +304,12 @@ header ul li a {
     background: transparent;
 }
 
-.vCall .card-media video{
-    height: 102%;
-    width: 100%;
+.vCall .card-media video {
+    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/6638c6b04eff56a99c1e2d7d_Discord_Website_Refresh_Hop-In-transcode.webm");
+    background-repeat: no-repeat;
     border-radius: 50px;
+    height: 530px;
+    background-size: cover;
 }
 
 .logos{
@@ -320,7 +328,7 @@ header ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    width: 100vw;
 }
 
 .chill .card-media{
@@ -333,17 +341,19 @@ header ul li a {
     border: none;
 }
 
-.chill .card-media video{
-    height: 102%;
-    width: 100%;
+.chill .card-media video {
+    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/663b271d6f05c8c9e11f8d65_Discord Refresh Sound-MP4-transcode (1).mp4");
+    background-repeat: no-repeat;
     border-radius: 50px;
+    height: 530px;
+    background-size: cover;
 }
 
 .fun-session{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px ;
+    width: 100vw;
 }
 
 .fun-session .card-media{
@@ -356,17 +366,19 @@ header ul li a {
     border: none;
 }
 
-.fun-session .card-media video{
-    height: 102%;
-    width: 100%;
+.fun-session .card-media video {
+    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/66446078b3e738a7c1f85e35_Discord_Website_Refresh_Activities_03-transcode.mp4");
+    background-repeat: no-repeat;
     border-radius: 50px;
-} 
+    height: 530px;
+    background-size: cover;
+}
 
 .xBox{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px ;
+    width: 100vw;
 }
 
 .xBox .card-media{
@@ -380,11 +392,13 @@ header ul li a {
     border: none;
 }
 
-.xBox .card-media video{
-    height: 102%;
-    width: 100%;
+.xBox .card-media video {
+    background: url("./assests/animations-n-videos-20241010T074159Z-001/animations-n-videos/6638c8e7cb756886cd8d61af_Discord_Website_Refresh_Platforms-transcode.webm");
+    background-repeat: no-repeat;
     border-radius: 50px;
-} 
+    height: 530px;
+    background-size: cover;
+}
 
 .dont-scroll {
     text-align: center;
@@ -397,6 +411,7 @@ header ul li a {
     font-size: 60px;
     line-height: 60px;
     color:white;
+    width: 100vw;
 }
 
 .dont-scroll .footer-btn {
@@ -407,26 +422,27 @@ header ul li a {
     color: white;
     gap: 10px;
     padding: 13px 25px;
-    border-radius: 20px;
+    border-radius: 17px;
     text-decoration: none;
     font-size: 17px;
     border: none;
     font-weight: 400;
     margin-top: 30px;
+
 }
 
 .dont-scroll button:hover {
-    background-color: #5865f2aa;
+    background-color: #7c84daaa;
 }
 
-.footer-img{
-    position: relative;
+/* .footer-img{
+    position: relative; */
 
-}
+/* } */
 
 .footer-img img{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    transform: translateY(10px);
 }
 
 footer {
@@ -434,10 +450,11 @@ footer {
     -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
     background-image: linear-gradient(135deg, #777BC2, #3D3098);
-    padding: 80px ;
+    padding: 80px;
     padding-top: 70px;
     border-top: 4px solid #8F91CF;
-    width: 100%;
+    width: 100vw;
+
 }
 
 .footer-container {
@@ -532,15 +549,15 @@ footer {
     text-align: center;
 }
 
-.chats, .fun-session, .vCall, .chill, .logos, .xBox{
-    margin: 50px 0px;
+.chats, .stream, .fun-session, .vCall, .chill, .logos, .xBox{
+    margin: 60px 0px;
 }
 
 
 @media screen and (max-width: 768px) {
     header {
         justify-content: space-between;
-        width: auto;
+        padding: 23px 34px;
     }
 
     header .nav-items {
@@ -562,10 +579,19 @@ footer {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 40px;
     }
 
-    .hero .details{
+    .hero .image {
+        padding: 20px;
+        align-self: center;
+    }
+
+    .hero .content img{
+        scale: 1.5;
+    }
+
+    .hero .content .details{
         justify-content: center;
         align-items: center;
         align-self: center;
@@ -584,9 +610,24 @@ footer {
         text-align: center;
     }
 
-    .details p{
-        font-size: 17px;
+    .content .details h1{
+        font-size: 40px;
+        line-height: 40px;
     }
+
+    .content .details p{
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    /* .chats .details, .chill .details, .stream .details, .fun-session .details, .vCall .details, .xBox .details h2{
+        font-size: 35px;
+    }
+
+    .chats .details, .chill .details, .stream .details, .fun-session .details, .vCall .details, .xBox .details p{
+        font-size: 28px;
+        line-height: 34px;
+    } */
 
     .hero-btns{
         flex-direction: column;
@@ -595,45 +636,47 @@ footer {
         margin-bottom: 70px;
     }
     
-    .cards{
+    .chats .cards, .chill .cards, .stream .cards, .vCall .cards, .fun-session .cards, .xBox .cards{
         width: 698px;
         height: 390px;
+        gap: 20px;
     }
 
-    .card-media{
-        width: 348px;
-        height: 250px;
+    .chats .card-media, .chill .card-media, .stream .card-media, .fun-session .card-media, .vCall .card-media, .xBox .card-media{
+        width: 368px;
+        height: 280px;
+        border-radius: 60%;
     }
 
-    .card-media video{
-        border-radius: 40px;
+    .chats .card-media video, .chill .card-media video, .stream .card-media video, .fun-session .card-media video , .vCall .card-media video, .xBox .card-media video{
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        height: 280px;
+        background-size: cover;
     }
 
+   
     .cards .details{
-        width: 320px;
+        width: 330px;
         height: 250px;
         gap: 20px;
     }
 
-    .chats .card-media img{
-        aspect-ratio: 331∶281;
-    }
-
     .cards .details h2{
-        font-size: 35px;
-        line-height: 36px;
+        font-size: 33px;
+        line-height: 35px;
         text-align: start;
     }
 
     .cards .details p{
-        font-size: 19px;
+        font-size: 16px;
         text-align: start;
-        line-height: 26px;
+        line-height: 23px;
     }
 
     .dont-scroll {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 40px;
+        line-height: 45px;
     }
 
     .footer-container{
@@ -645,11 +688,85 @@ footer {
         gap: 30px;
     }
 
-
 } 
 
 @media (max-width: 576px) {
-    
+    .hero{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .details{
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 500px ;
+        height: 250px ;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .content{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chill .details, .stream .details, .vCall .details, .fun-session .details, .xBox .details{
+        justify-content: center;
+        align-items: center;
+        width: 600px ;
+        height: 250px ;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .details h1{
+        font-size: 35px;
+    }
+
+    .details p{
+        font-size: 16px;
+    }
+
+    .chats .cards, .chill .cards, .stream .cards, .vCall .cards, .fun-session .cards, .xBox .cards{
+        flex-direction: column-reverse;
+        width: 500px;
+        height: 700px;
+    }
+
+    .chats .card-media, .chill .card-media, .stream .card-media, .fun-session .card-media, .vCall .card-media, .xBox .card-media{
+        width: 460px;
+        height: 420px;
+        border-radius: 60%;
+    }
+
+    .chats .card-media video, .chill .card-media video, .stream .card-media video, .fun-session .card-media video , .vCall .card-media video, .xBox .card-media video{
+        height: 420px;
+        width: 460px;
+        border-radius: 60%;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        background-size: cover;    
+    }
+
+    .cards .details {
+        width: 480px;
+        height: 280px;
+        padding: 40px;
+    }
+
+    .cards h2{
+        font-size: 17px;
+    }
+
+
+
+
 }
 
 
@@ -657,3 +774,4 @@ footer {
 @media (max-width: 380px) {
 
 }
+
