@@ -170,10 +170,6 @@ header ul li a {
     color: #23272a;
 }
 
- 
-.path{
-    fill: black;
-}
 
 .hero-btns .download-btn:hover{
     color: #5765f2;
@@ -312,16 +308,53 @@ header ul li a {
     background-size: cover;
 }
 
-.logos{
-    display:flex;
+/* .logos{
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 30px;
+} */
+
+/* .logos {
+    background-image: url(https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/664f259f33b6731b7df75db4_line-move.webp);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 30px 0;
+    width: 100%;
+    /* position: relative; 
 }
 
 .logos .text{
-    width: 30px;
-    height: 30px;
+    font-size: 50px;
+    color: white;
+    margin: 0 40px;
+    font-family: "Mukta";
+    font-weight: 900;
+    font-size: 60px;
+} */
+
+
+.logo {
+    background-image: url(https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/664f259f33b6731b7df75db4_line-move.webp);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+    /* position: relative; */
+    width: 100vw;
+}
+
+.logos {
+    display: inline-block;
+}
+
+.logos .text {
+    font-size: 50px;
+    color: white;
+    margin: 0 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
 }
 
 .chill{
@@ -549,8 +582,8 @@ footer {
     text-align: center;
 }
 
-.chats, .stream, .fun-session, .vCall, .chill, .logos, .xBox{
-    margin: 60px 0px;
+.chats, .stream, .fun-session, .vCall, .chill, .xBox{
+    margin: 90px 0px;
 }
 
 
@@ -688,6 +721,10 @@ footer {
         gap: 30px;
     }
 
+    .logo{
+       width: 100vw;
+    }
+
 } 
 
 @media (max-width: 576px) {
@@ -740,32 +777,53 @@ footer {
     }
 
     .chats .card-media, .chill .card-media, .stream .card-media, .fun-session .card-media, .vCall .card-media, .xBox .card-media{
-        width: 460px;
-        height: 420px;
-        border-radius: 60%;
+        width: 400px;
+        /* height: 400px; */
+        border-radius: 20%;
     }
 
     .chats .card-media video, .chill .card-media video, .stream .card-media video, .fun-session .card-media video , .vCall .card-media video, .xBox .card-media video{
-        height: 420px;
-        width: 460px;
-        border-radius: 60%;
+         height: 380px; 
+        /* width: 430px; */ 
+        border-radius: 30px;
         background-repeat: no-repeat;
-        border-radius: 50px;
         background-size: cover;    
+    }
+
+    .stream .card-media{
+        flex-direction: column-reverse;
     }
 
     .cards .details {
         width: 480px;
         height: 280px;
-        padding: 40px;
+        padding: 20px;
     }
 
     .cards h2{
         font-size: 17px;
     }
 
+    .dont-scroll{
+        font-size: 42px;
+    }
 
+    .footer-container{
+        flex-direction: column;
+    }
 
+    .footer-links{
+        gap: 40px;
+    }
+
+    .foot-end{
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .logo{
+        display: none;
+    }
 
 }
 
