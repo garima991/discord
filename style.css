@@ -204,11 +204,11 @@ header ul li a {
     backdrop-filter: blur(24px) contrast(0.88) brightness(1.75);
 }
 
+
 .card-media{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 525px; */
     border-radius: 80px;
     border: none;
 }
@@ -248,20 +248,13 @@ header ul li a {
     line-height: 30px;
 }
 
-.stream{
+section{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
 }
 
-
-.vCall{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
 
 
 /* .logos{
@@ -310,29 +303,6 @@ header ul li a {
     margin: 0 40px;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
-}
-
-.chill{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
-
-
-.fun-session{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
-
-
-.xBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
 }
 
 .dont-scroll {
