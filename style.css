@@ -545,14 +545,6 @@ footer {
         padding: 20px;
     }
 
-     .card-media{
-        width: 368px;
-        /* height: 280px; */
-    }
-
-     .card-media video{
-        border-radius: 36px;
-    }
 
   .cards .details {
     width: 330px;
@@ -603,21 +595,17 @@ footer {
   .cards {
     flex-direction: column-reverse;
   }
-
-  /* .card-media video {
-    border-radius: 30px;
-  } */
   
+  .card-media{
+    width: auto;
+  }
 
   .cards .details {
     width: auto;
   }
 
-}
+  .logo{
+    display: none;
+  }
 
-
-@media (max-width: 380px) {
-    .logos{
-        display: none;
-    }
 }
