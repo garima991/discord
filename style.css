@@ -173,6 +173,10 @@ header ul li a {
   font-family: "Mukta";
 }
 
+.hero-btn img{
+    height: 30px;
+}
+
 .hero-btn:hover {
   box-shadow: 0 8px 5px 8px #00000010;
 }
@@ -294,7 +298,7 @@ header ul li a {
     background-color: #5865f2;
     gap: 10px;
     padding: 13px 25px;
-    border-radius: 17px;
+    border-radius: 30px;
     text-decoration: none;
     font-size: 17px;
     border: none;
@@ -329,7 +333,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 100%;
+  gap: 70px;
+  /* max-width: 100%; */
   color: white;
 }
 
@@ -394,9 +399,8 @@ footer {
 }
 
 .foot-end {
-  margin: 25px;
+  margin-top: 25px;
   display: flex;
-  padding: 0px 100px;
   justify-content: space-between;
   align-items: center;
 }
@@ -409,7 +413,7 @@ footer {
 .foot-end button {
   padding: 11px;
   background-color: #4f74fa;
-  border-radius: 20px;
+  border-radius: 30px;
   color: white;
   border: none;
   font-size: smaller;
@@ -417,14 +421,6 @@ footer {
   text-align: center;
 }
 
-/* .chats,
-.stream,
-.fun-session,
-.vCall,
-.chill,
-.xBox {
-  margin: 90px 0px;
-} */
 
 @media screen and (max-width: 1281px) {
     .cards .details h2{
@@ -464,6 +460,12 @@ footer {
         line-height: 22px;
         font-weight: 400;
     }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
 }
 
 
@@ -578,9 +580,6 @@ footer {
     gap: 30px;
   }
 
-    .logo{
-       width: 100vw;
-    }
 } 
 
 @media (max-width: 767px) {
@@ -604,8 +603,11 @@ footer {
     width: auto;
   }
 
+  .footer-container{
+    flex-direction: column;
+  }
+
   .logo{
     display: none;
   }
-
 }
