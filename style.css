@@ -201,8 +201,9 @@ header ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 40px;
+  padding: 90px 40px;
   width: 100vw;
+  position: relative;
 }
 
 .cards {
@@ -216,6 +217,7 @@ header ul li a {
     gap: 30px;
     -webkit-backdrop-filter: blur(60px) contrast(0.75) brightness(1.1);
     backdrop-filter: blur(60px) contrast(0.75) brightness(1.1);
+    position: relative; 
 }
 
 
@@ -255,6 +257,22 @@ header ul li a {
     line-height: 32px;
 }
 
+.corner-gif{
+    width: 10%;
+    position: absolute;
+    top: 0rem;
+    right: 22rem;
+}
+
+.corner-img{
+  width: 30%;
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  top: -8rem;
+  right: 1rem;
+}
+
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ FOOTER BRANDING ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
 .logo {
@@ -263,7 +281,7 @@ header ul li a {
   overflow: hidden;
   padding: 20px 0;
   white-space: nowrap;
-  width: 100vw;
+  width: 100%;
 }
 
 .logos {
@@ -324,7 +342,7 @@ footer {
   -webkit-backdrop-filter: blur(100px);
   backdrop-filter: blur(100px);
   background-image: linear-gradient(135deg, #ffffff4d, #ffffff0d), linear-gradient(261deg, #2e1a8e, #0e0e5c);
-  padding: 80px;
+  padding: 60px;
   padding-top: 70px;
   border-top: 4px solid #8f91cf;
   width: 100vw;
@@ -334,7 +352,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 70px;
+  gap: 20px;
   /* max-width: 100%; */
   color: white;
 }
@@ -380,6 +398,10 @@ footer {
   margin-bottom: 20px;
 }
 
+.footer-links > div{
+    width: 150px;
+}
+
 .footer-links h4 {
   margin-bottom: 10px;
   font-weight: 700;
@@ -417,8 +439,8 @@ footer {
   border-radius: 30px;
   color: white;
   border: none;
-  font-size: smaller;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -433,6 +455,16 @@ footer {
         font-size: 25px;
         line-height: 32px;
     }
+
+    .corner-gif{
+      top: 2rem;
+      right: 15rem;
+    }
+
+    .corner-img{
+        top: -4rem;
+        right: -2.4rem
+    }
 }
 
 
@@ -445,6 +477,16 @@ footer {
     .cards .details p {
         font-size: 23px;
         line-height: 28px;
+    }
+
+    .corner-gif{
+      top: -4px;
+      right: 140px;
+    }
+
+    .corner-img{
+      top: -42px;
+      right: -26px
     }
 }
 
@@ -462,6 +504,17 @@ footer {
         font-weight: 400;
     }
 
+    .corner-gif{
+      top: -3rem;
+      right: 8rem;
+    }
+
+    .corner-img{
+      top: -38px;
+      right: -22px;
+    }
+
+
     .footer-links {
         flex-wrap: wrap;
         gap: 30px;
@@ -471,7 +524,7 @@ footer {
 
 
 
-/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ MEDAI QUERY - 927px ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ MEDIA QUERY - 927px ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
 @media screen and (max-width: 927px) {
   header {
@@ -551,7 +604,6 @@ footer {
 
   .cards .details {
     width: 330px;
-    /* height: 250px; */
     gap: 20px;
   }
 
@@ -581,6 +633,10 @@ footer {
     gap: 30px;
   }
 
+  .corner-gif, .corner-img{
+    visibility: hidden;
+  }
+
 } 
 
 @media (max-width: 767px) {
@@ -602,6 +658,17 @@ footer {
 
   .cards .details {
     width: auto;
+  }
+
+  .corner-gif{
+    max-width: 6rem;
+    margin-top: -4rem;
+    margin-right: 8rem;
+  }
+
+  .corner-img, .corner-gif{
+    height: 188px;
+    width: 188px;
   }
 
   .footer-container{
